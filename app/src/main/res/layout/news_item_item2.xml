@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/simpledraweeview2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:gravity="center"
+        android:id="@+id/tv_newstitle_item2"
+        />
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="128dp"
+        android:layout_below="@id/tv_newstitle_item2"
+        android:layout_marginTop="5dp"
+        android:id="@+id/pager_newsitem_item2"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/pager_newsitem_item2"
+        android:layout_marginLeft="15dp"
+        android:id="@+id/tv_newstime_item2"
+        android:layout_marginBottom="20dp"/>
+    </RelativeLayout>
+
+</LinearLayout>

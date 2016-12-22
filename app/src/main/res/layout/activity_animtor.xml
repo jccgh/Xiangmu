@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorcenghong"
+    tools:context=".view.activity.AnimtorActivity">
+    <jcc.mycustomtopview.MyCustomTopView
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        app:leftImgView="@drawable/aditop"
+        app:centerTextTitle="趣味功能"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:id="@+id/enjoy_TopView"/>
+    <RelativeLayout
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:id="@+id/centerRelativelayout"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:id="@+id/express"
+            android:layout_marginLeft="29dp"
+            android:layout_marginTop="29dp"
+            android:src="@drawable/express"
+            android:scaleType="centerCrop"/>
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:id="@+id/imageviewCenter"
+            android:src="@drawable/a_v"
+            android:layout_centerInParent="true"
+            android:scaleType="centerCrop"/>
+
+        <ImageView
+            android:id="@+id/game"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/feiji"
+            android:scaleType="centerCrop"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="29dp"
+            android:layout_marginRight="29dp"
+
+            />
+    </RelativeLayout>
+</RelativeLayout>

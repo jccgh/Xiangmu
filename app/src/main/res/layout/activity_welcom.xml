@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_welcom"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorgreen"
+    tools:context="jcc.xiangmu.view.activity.WelcomActivity">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:id="@+id/welcom_img"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="跳过"
+        android:textSize="25sp"
+        android:textColor="@color/colorwhite"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="30dp"
+        android:id="@+id/advertisement_text"
+        android:layout_marginRight="30dp"/>
+    <ImageView
+        android:layout_width="36dp"
+        android:layout_height="39dp"
+        android:scaleType="centerCrop"
+      android:layout_toLeftOf="@id/advertisement_text"
+        android:layout_alignTop="@id/advertisement_text"
+        android:layout_marginRight="15dp"
+        android:src="@drawable/advertisement"
+        />
+
+</RelativeLayout>

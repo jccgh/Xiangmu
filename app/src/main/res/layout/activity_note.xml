@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_note"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorgray"
+    tools:context="jcc.xiangmu.view.activity.NoteActivity">
+
+    <jcc.mycustomtopview.MyCustomTopView
+        android:id="@+id/note_TopView"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:paddingBottom="12dp"
+        android:paddingTop="12dp"
+        app:centerTextTitle="笔记"
+        app:leftImgView="@drawable/aditop" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/note_TopView"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
+        <RelativeLayout
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:id="@+id/note_leftlayout">
+        <Button
+            android:id="@+id/note_addbt"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="添加笔记"
+            android:background="@drawable/bt_background"/>
+            <Button
+                android:id="@+id/note_query"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="查看笔记"
+                android:layout_below="@id/note_addbt"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bt_background"/>
+            <ListView
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_below="@id/note_query"
+                android:id="@+id/note_listview"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_toRightOf="@id/note_leftlayout"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/note_rightlayout"/>
+    </RelativeLayout>
+</RelativeLayout>

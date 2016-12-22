@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_news_query"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorgreen"
+    tools:context="jcc.xiangmu.view.activity.NewsQueryActivity">
+
+    <jcc.mycustomtopview.MyCustomTopView
+        android:id="@+id/query_TopView"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:paddingBottom="12dp"
+        android:paddingTop="12dp"
+        app:centerTextTitle="查询"
+        app:leftImgView="@drawable/aditop" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/query_TopView"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+        <ImageView
+            android:id="@+id/query_img"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_margin="2dp"
+            android:alpha="0.5"
+            android:background="@color/colorgray"
+            android:src="@drawable/a_z" />
+
+        <TextView
+            android:id="@+id/query_tv"
+            android:layout_width="48dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:text="搜索"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/query_et"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical"
+            android:hint="关键字/标题"
+            android:singleLine="true"
+            android:layout_toLeftOf="@id/query_tv"
+            android:layout_toRightOf="@id/query_img"
+            android:background="@color/colorgray" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">天天新闻</string>
+    <string name="open_drawerlayout">打开侧拉按钮</string>
+    <string name="close_drawerlayout">关闭侧拉按钮</string>
+    <string name="title_activity_game">GameActivity</string>
+</resources>

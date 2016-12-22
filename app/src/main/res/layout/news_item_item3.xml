@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/simpledraweeview3"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_newstime_item3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alpha="0.7"
+            android:gravity="center"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/tv_newstitle_item3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_newstime_item3"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:id="@+id/img_newsimg_item3"
+            android:layout_width="128dp"
+            android:layout_height="128dp"
+            android:layout_below="@id/tv_newstitle_item3"
+            android:padding="5dp"
+            android:scaleType="centerCrop"
+            />
+
+        <TextView
+            android:id="@+id/tv_newscontent_item3"
+            android:layout_width="match_parent"
+            android:layout_height="128dp"
+            android:layout_alignTop="@id/img_newsimg_item3"
+            android:layout_toRightOf="@id/img_newsimg_item3"/>
+    </RelativeLayout>
+</LinearLayout>
